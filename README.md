@@ -1,17 +1,23 @@
-# Incident Tracker - Auto-Triage System
+# Incident Tracker Mini Project 3
 
-Python automation tool that creates incidents in Jira + ServiceNow simultaneously and generates an interactive HTML dashboard.
+Sync and track incidents between Jira and ServiceNow. This tool fetches Jira issues and creates/updates corresponding incidents in ServiceNow, keeping both systems in sync.
 
-## Results
-- **60 incidents** created: Critical: 30 | High: 18 | Medium/Low: 12
-- **100% success rate** on API calls to both systems
-- **Dashboard** with severity/type/team analytics
+## Features
+- **Bidirectional sync**: Jira Issues ↔ ServiceNow Incidents
+- **Secure config**: Uses environment variables, no hardcoded secrets
+- **Filtering**: Sync by Jira project, status, or custom JQL
+- **Logging**: Track all API calls and errors
+- **Python 3.8+**: Built with `requests` and `python-dotenv`
 
-## Tech Stack
-`Python` `Jira REST API` `ServiceNow API` `Jinja2` `Chart.js`
+## Prerequisites
+1. **Python 3.8+** installed
+2. **ServiceNow Developer Instance**: Get one at https://developer.servicenow.com
+3. **Jira Cloud Account** with API token: Generate at https://id.atlassian.com/manage-profile/security/api-tokens
+4. **Git** for version control
 
-## Setup
-1. `pip install -r requirements.txt`
-2. Copy `config.example.py` → `config.py` and add credentials
-3. `python main.py`
-4. Open `output/report.html`﻿# Incident-Tracker-MiniProject-3
+## Setup Instructions
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/Harika-git-hub/Incident-Tracker-MiniProject-3.git
+cd Incident-Tracker-MiniProject-3

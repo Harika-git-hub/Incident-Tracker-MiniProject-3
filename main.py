@@ -79,6 +79,6 @@ def main():
     report.generate()
     print(f"\n✅ Done. Total incidents: {len(report.incidents)}")
     print(f"✅ Report saved to: {config.REPORT_PATH}")
-
+    
 if __name__ == "__main__":
     main()
